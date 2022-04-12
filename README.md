@@ -4,6 +4,8 @@
 > This is where I plan to keep [`noahrider.com`](https://noahrider.com/) for the near future.
 > 
 > I may remove it from my other account (@playplazaguy), or I may keep it as a memory.
+>
+> [`Current Website URL`](https://noahrider.github.io/website/)
 > <!---
 > OTHER CODE
 > I'm currently learning JavaScript, Python, and C++!
