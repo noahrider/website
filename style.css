@@ -1,53 +1,70 @@
-body {
-
-  background-color: rgb(234, 234, 234);
-
-}
-
-.header {
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: black;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 50px;
+  }
+  
+  #learn-more {
     background-color: white;
-    padding: 10px;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #learn-more:hover {
+    background-color: gray;
+  }
+  
+  footer {
+    background-color: #222;
+    color: gray;
+    padding: 20px;
     text-align: center;
+    margin-top: auto;
+  }
 
-}
-
-.nav {
-
-  background-color: rgba(255, 255, 255, 0.500);
-  padding: 10px;
-  text-align: center;
-
-}
-
-.a-nav {
-
-  color:rgb(0, 238, 255);
-  padding: 10px;
-
-}
-
-h1 {
-
-  color:brown;
-
-}
-
-h2 {
-
-  color:rgb(30, 107, 196);
-
-}
-
-h3 {
-
-  color:brown;
-
-}
-
-h4 {
-
-  color: rgb(34, 139, 80);
-  text-align: center;
-
-}
+  <li><a href="index.html"><p data-value="HOME">HOME</p></a></li>
+            <li><a href="projects.html"><p data-value="PROJECTS">PROJECTS</p></a></li>
+            <li><a href="contact.html"><p data-value="CONTACT">CONTACT</p></a></li>
