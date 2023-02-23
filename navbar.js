@@ -1,4 +1,4 @@
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
 
 let intervals = [];
 

@@ -1,6 +1,24 @@
-const learnMoreButton = document.getElementById('learn-more');
+// Used to hold existing open modal
+openModal = undefined;
 
-learnMoreButton.addEventListener('click', () => {
-  alert('Thanks for clicking! Unfortunately, this button doesn\'t do anything yet. This is just a demo website.');
-});
+function modalBackgroundClick(event, modalName)
+{
+  var modal = document.getElementById(modalName);
+  if (event.target === modal) {
+    turnOffModal(modal);
+  }
+}
 
+function turnOnModal(modalName, event) {
+  if (modal == undefined) {
+    var modal = document.getElementById(modalName);
+    modal.classList.add('bg-active');
+    openModal = modal;
+  }
+}
+
+function turnOffModal(modalName) {
+  var modal = document.getElementById(modalName);
+  modal.classList.remove('bg-active');
+  openModal = null;
+}

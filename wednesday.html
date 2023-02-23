@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Is it Wednesday My Dudes?</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+            color: white;
+			text-align: center;
+			padding-top: 50px;
+			font-size: 30px;
+            background-color: black;
+		}
+		
+		#not-wednesday-message {
+			display: none;
+			margin-top: 50px;
+			color: red;
+			font-weight: bold;
+		}
+
+        #countdown {
+            color: red;
+        }
+	</style>
+</head>
+<body>
+	<h1>Is It Wednesday My Dudes</h1>
+	<p id="countdown"></p>
+
+	<div id="not-wednesday-message">It is not Wednesday my dudes.</div>
+
+	<script>
+		// Check if today is Wednesday
+		var today = new Date().getDay();
+		if (today != 3) {
+			document.getElementById("not-wednesday-message").style.display = "block";
+		}
+
+		// Set the date we're counting down to
+		var countDownDate = new Date("June 30, 2021 00:00:00").getTime();
+
+		// Update the countdown every 1 second
+		var x = setInterval(function() {
+
+			// Get the current date and time
+			var now = new Date().getTime();
+
+			// Calculate the distance between now and the countdown date
+			var distance = countDownDate - now;
+
+			// Calculate days, hours, minutes and seconds
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			// Display the countdown
+			document.getElementById("countdown").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+			// If the countdown is over, display a message
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("countdown").innerHTML = "IT IS WEDNESDAY MY DUDES.";
+			}
+		}, 1000);
+	</script>
+    <footer>Created by Noah Rider</footer>
+</body>
+</html>

@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Noah Rider - Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Noah Rider - Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+
+<body>
     <header>
       <h1>Noah Rider</h1>
       <nav>
         <ul class="navbar">
-            <li><a href="index.html"><p data-value="HOME">HOME</p></a></li>
-            <li><a href="projects.html"><p data-value="PROJECTS">PROJECTS</p></a></li>
-            <li><a href="contact.html"><p data-value="CONTACT">CONTACT</p></a></li>
-          </ul>          
-      </nav>
+          <li><a href="index.html"><p data-value="HOME">HOME</p></a></li>
+          <li><a href="collections.html"><p data-value="COLLECTIONS">COLLECTIONS</p></a></li>
+          <li><a href="projects.html"><p data-value="PROJECTS">PROJECTS</p></a></li>
+          <li><a href="contact.html"><p data-value="CONTACT">CONTACT</p></a></li>
+        </ul> 
     </header>
-    <main>
-      <section id="welcome">
-        <h2>Welcome to my website!</h2>
-        <p>I'm Noah Rider. That's all for now.</p>
-        <button id="learn-more">Learn More</button>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2023 Noah Rider, Rights not Reserved</p>
-    </footer>
-    <script src="script.js"></script>
-    <script src="navbar.js"></script>
-  </body>
+  <main>
+    <section id="welcome">
+      <h2>Welcome to my website!</h2>
+      <p>I'm Noah Rider. You might know me from school or my glasses. I am a young "developer" who likes
+        messing around with computers & software.
+      </p>
+      <button class="open-modal-btn" onclick="turnOnModal('learn-more-modal')">Learn More</button>
+
+      <div id="learn-more-modal" class="modal-background" onclick="modalBackgroundClick(event, 'learn-more-modal')">
+        <div class="modal-content">
+          <h2>About Noah Rider (me)</h2>
+          <p>I am a 14 year old kid that loves to do coding, or really anything to do with computers & software. I
+            specialize in HTML, CSS, and JS. I am currently trying to learn the basics of C.</p>
+          <p>When I'm not coding, I like to play Minecraft or Call of Duty: Black Ops 1. (Also if you want to 1v1
+            me I will totally beat you.)</p>
+          <p>I have been around technology for almost my whole life, and it shows. I am able to fix almost any problem
+            that a computer has. I even built my own computer at one point. </p>
+          <button class="close-modal-btn" onclick="turnOffModal('learn-more-modal')">Close</button>
+        </div>
+      </div>
+
+      <div class="section-box">
+        <h2>What's on Noah's Mind?</h2>
+        <p>I've been thinking of making a blog. If you want to check it out, I probally won't keep it alive for long,
+          but here's the link if you want to check it out:
+          <a href="https://blog.noahrider.com">[blog.noahrider.com]
+          </a>
+        </p>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Noah Rider, Rights not Reserved</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="navbar.js"></script>
+</body>
+
 </html>
