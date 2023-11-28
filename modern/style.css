@@ -1,0 +1,17 @@
+header {
+    text-align: center;
+    padding: 5px;
+  }
+  img {
+    display: block;
+    margin: auto;
+  }
+
+  body {
+    background-color: black;
+  }
+
+  h1, h2, h3, h4, h5, p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+  }
