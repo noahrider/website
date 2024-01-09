@@ -192,6 +192,7 @@ html {
   margin-top: 10px;
 }
 
+.email-form input[type="name"],
 .email-form input[type="text"],
 .email-form input[type="email"],
 .email-form textarea {
