@@ -13,18 +13,36 @@
 </head>
 <body>
     <header>
+        <div class="announcement-banner">
+            <p>Website is currently under construction.</p>
+        </div>
         <img src="images/[noahrider].png" width="500" class="center">
         <nav class="sticky-nav">
-            <a href="index.html">Home</a>
-            <a href="bio.html">Biography</a>
+            <a href="index.html">About</a>
+            <a href="s-media.html">Social Media</a>
             <a href="projects.html">Projects</a>
             <a href="videos.html">Videos</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
     <content>
-
-        <p>Have a question? You can email me at -</p><a href="mailto:dev@noahrider.com"><p>dev@noahrider.com</p></a>
+<div style="text-align:center;text-decoration:none;">
+        <p style="display:inline;">Fill out the form, or email me at - </p><a href="mailto:dev@noahrider.com"><p style="display:inline;">dev@noahrider.com</p></a>
+    </div>
+        <div class="email-form">
+        <form action="send_email.php" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Example Man" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@email.net" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Type an amazing world-changing message..." required></textarea>
+            
+            <button type="submit">Send Email</button>
+        </form>
+    </div>
     
     </content>
     <footer>

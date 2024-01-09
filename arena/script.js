@@ -54,7 +54,7 @@ function clearAndResetDoc(message) {
     <h1 id="message">${message}</h1>`;
   }
   
-  function makeItRain(timeDelayToStart = (10 * 1000), timeDelayReveal = (10 * 1000), message = 'Happy April Fools :)', clearDoc = false) {
+  function makeItRain(timeDelayToStart = (10 * 1000), timeDelayReveal = (10 * 1000), message = 'If you are seeing this, than that means I did something wrong. Shoot me an email! [dev@noahrider.com]', clearDoc = false) {
     const characters = `日ﾊﾐﾋｰｳｼﾅﾓﾆｻﾜﾂｵﾘｱﾎﾃﾏｹﾒｴｶｷﾑﾕﾗｾﾈｽﾀﾇﾍｦｲｸｺｿﾁﾄﾉﾌﾔﾖﾙﾚﾛﾝ0123456789ZNOAHRIDER"'=:.+<>|_ç`;
     const length = 100;
   
@@ -110,3 +110,29 @@ function clearAndResetDoc(message) {
   function sendFeedback() {
     window.open('mailto:arena@noahrider.com?subject=[ARENA] Feedback', '_blank');
   }
+
+  // why is this site so slow? popup
+// Get references to the popup and overlay elements
+const popup = document.getElementById('slowpage-popup');
+const overlay = document.getElementById('slowpage-overlay');
+
+// Get references to the show and close popup buttons
+const showPopupButton = document.getElementById('showPopupButton');
+const closePopupButton = document.getElementById('closePopupButton');
+
+// Function to show the popup
+function showPopup() {
+    popup.style.display = 'block';
+    overlay.style.display = 'block';
+}
+
+// Function to close the popup
+function closePopup() {
+    popup.style.display = 'none';
+    overlay.style.display = 'none';
+}
+
+// Event listeners for show and close popup buttons
+showPopupButton.addEventListener('click', showPopup);
+closePopupButton.addEventListener('click', closePopup);
+overlay.addEventListener('click', closePopup);

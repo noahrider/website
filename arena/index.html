@@ -12,7 +12,8 @@
 <body>
     <header>
         <h1>The Arena</h1>
-        <p>The arena is a secret part of my website that includes secret stuff.</p>
+        <p>The arena is a secret part of my website that includes secret stuff. <i>(Stuff that isn't good enough for
+            the main pages, <br>or fun games that I don't know what else to do with.)</i></p>
         <div class="returnbutton"><button onclick="goToHomePage()">Back to index [Home]</button></div>
     </header>
 
@@ -36,6 +37,12 @@
               <h2>Snake</h2>
               <a href="/arena/items/snake/index.html">A recreation of the classic game.</a>
             </div>
+
+            <div class="item-div">
+              <div class="inside-item-div">
+                <h2>Snake</h2>
+                <a href="/arena/items/hangman/index.html">Guess the word to keep a man alive.</a>
+              </div>
           </div>
           
     </div>
@@ -44,7 +51,17 @@
         <div class="feedback-button">
             <button onclick="sendFeedback()">Want something added to The Arena? Shoot me an email!</button>
         </div>
-        <p>&copy; 2023 [/noahrider] / Noah Rider</p>
+        <br>
+        <button id="showPopupButton" class="slowpage-button">Why is this page so slow?</button>
+
+        <div id="slowpage-popup" class="slowpage-popup">
+          <h2><i>Why is this page so slow?</i></h2>
+          <p>The matrix background that you see is being generated in real time. Doing that takes up a lot of resources, 
+            but it's just so much cooler, don't you think?
+          </p>
+          <button id="closePopupButton">Close</button>
+      </div>
+      <p>&copy; 2023 [/noahrider] / Noah Rider</p>
     </footer>
 
     <script src="script.js"></script>
