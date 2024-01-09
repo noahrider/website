@@ -26,31 +26,36 @@
         </nav>
     </header>
     <content>
-<div style="text-align:center;text-decoration:none;">
+<div style="text-align:center;text-decoration:none;margin-top:50px">
         <p style="display:inline;">Fill out the form, or email me at - </p><a href="mailto:dev@noahrider.com"><p style="display:inline;">dev@noahrider.com</p></a>
     </div>
         <div class="email-form">
-        <form action="send_email.php" method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Example Man" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@email.net" required>
-            
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Type an amazing world-changing message..." required></textarea>
-            
-            <button type="submit">Send Email</button>
-        </form>
+
+        <form action="https://formspree.io/f/xpzvwalk" method="POST">
+  <label>
+    Name
+    <input type="email" name="email" placeholder="Example Man III" required>
+  </label>
+  <label>
+    Email
+    <input type="email" name="email" placeholder="example@email.net" required>
+  </label>
+  <label>
+    Message
+    <textarea name="message"placeholder="Type an amazing world-changing message..." required></textarea>
+  </label>
+  <button type="submit">Send</button>
+</form>
     </div>
     
     </content>
     <footer>
+        
         <a href="mailto:dev@noahrider.com"><i class="fa-regular fa-envelope fa-xl" style="color: #ffffff;"></i></a>
         
         <span><a href="https://github.com/noahrider"><i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i></a></span>
         
-        <p>&copy; 2023 [/noahrider] / Noah Rider</p>
+        <p>&copy; 2023 [/noahrider]<br>Hosted and Created by Noah Rider</p>
     </footer>
     <script src="konami.js"></script>
 </body>

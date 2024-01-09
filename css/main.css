@@ -189,6 +189,7 @@ html {
   padding: 20px;
   box-sizing: border-box;
   border-radius: 10px;
+  margin-top: 10px;
 }
 
 .email-form input[type="text"],
