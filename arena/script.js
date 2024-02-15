@@ -97,8 +97,9 @@ function clearAndResetDoc(message) {
     setTimeout(startRain, timeDelayToStart + 100);
   }
   
-  makeItRain(0, 10 * 1000); // delete this line to use all the code in the console
+  makeItRain(0, 10 * 1000); // delete this line to use matrix code in any page
 
+  // stop matrix function
 
   
   // goToHomePage function (return to home, outside of arena)
@@ -112,27 +113,27 @@ function clearAndResetDoc(message) {
   }
 
   // why is this site so slow? popup
-// Get references to the popup and overlay elements
+// get references to the popup and overlay elements
 const popup = document.getElementById('slowpage-popup');
 const overlay = document.getElementById('slowpage-overlay');
 
-// Get references to the show and close popup buttons
+// get references to the show and close popup buttons
 const showPopupButton = document.getElementById('showPopupButton');
 const closePopupButton = document.getElementById('closePopupButton');
 
-// Function to show the popup
+// function to show the popup
 function showPopup() {
     popup.style.display = 'block';
     overlay.style.display = 'block';
 }
 
-// Function to close the popup
+// function to close the popup
 function closePopup() {
     popup.style.display = 'none';
     overlay.style.display = 'none';
 }
 
-// Event listeners for show and close popup buttons
+// event listeners for show and close popup buttons
 showPopupButton.addEventListener('click', showPopup);
 closePopupButton.addEventListener('click', closePopup);
 overlay.addEventListener('click', closePopup);

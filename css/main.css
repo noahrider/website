@@ -162,6 +162,15 @@ html {
 
 /* End quote (No we are not done yet) */
 
+#feature-thing {
+  width: 90%; 
+  margin: 0 auto; 
+  margin-top: 50px;
+  border: 3px solid #ffffff; 
+  border-radius: 5px;
+  padding: 20px;
+}
+
 /* Email form */
 
 .email-form {
@@ -204,4 +213,49 @@ html {
 .email-form label {
   font-size: 16px;
   color: #9f8383; 
+}
+
+.youtube-channel-container {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.youtube-channel {
+  padding: 15px;
+  text-align: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  width: 350px;
+}
+
+.youtube-channel button {
+  background-color: #b2071d;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fade-in.visible {
+  opacity: 1;
 }

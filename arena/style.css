@@ -7,6 +7,7 @@ body {
     height: 100vh; /* Set the body to full viewport height */
     display: flex;
     flex-direction: column; /* Align children in column layout */
+    cursor: url('e')
 }
   #sushi {
     position: absolute;
@@ -100,7 +101,6 @@ body {
     color: white;
     border: 2px solid #FF5733;
     border-radius: 5px;
-    cursor: pointer;
   }
 
   .feedback-button button:hover {
@@ -110,7 +110,6 @@ body {
     color: white;
     border: 2px solid #FF5733;
     border-radius: 5px;
-    cursor: pointer;
   }
   /* item */
   .item-div {
@@ -139,7 +138,34 @@ body {
     color: white;
     text-decoration: none;
   }
+  /* seperator */
+  .seperator-div {
+    text-align: center;
+    margin-top: 50px;
+  }
   
+  .seperator-div .inside-seperator-div {
+    padding: 20px 30px;
+    font-size: 20px;
+    background-color: #0300be;
+    color: white;
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .seperator-div .inside-seperator-div:hover {
+    background-color: #0300be;
+    border-color: #0300be;
+  }
+  
+  .seperator-div .inside-seperator-div a {
+    color: white;
+    text-decoration: none;
+  }
+
   .slowpage-popup {
     display: none;
     position: fixed;
@@ -176,6 +202,7 @@ body {
     border: 2px solid #003800;
     border-radius: 5px;
     cursor: pointer;
+    cursor: help;
   }
   
   .slowpage-button:hover {
