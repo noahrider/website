@@ -1,0 +1,37 @@
+body,html {
+  background-color: rgb(2, 0, 15);
+  min-height: calc(100% - 100px);
+}
+
+h1,h2,h3,h4,h5,p,a {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.center-div {
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1050px;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.center-div a {
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+}
+
+.center-div a:hover {
+  text-decoration: wavy;
+  color: rgb(124, 0, 0);
+}
