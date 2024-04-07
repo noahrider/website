@@ -1,32 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noah Rider</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah Rider</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/light.css" id="light-theme">
+    <link rel="stylesheet" href="css/dark.css" id="dark-theme">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/c3654d2a40.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  
-      <header>
-        <!-- Link img here -->
-        <!-- nav bar -->
-      </header>  
-      <div class="center-div">    
-          <h1>Website coming soon... for now here's some links you might find useful:</h1>
-          <a href="#"> | </a>
-          <a href="https://rmnetwork.us" target="_blank">RM Network</a>
-          <a href="#"> | </a>
-          <a href="https://github.com/noahrider" target="_blank">GitHub</a>
-          <a href="#"> | </a>
+    <!-- cookie popup -->
+    <div id="cookie-popup">
+        <h2>Cookies!!</h2>
+        <p>I'm using cookies to remember if you are using light or dark mode. That's it.
+        <a href="https://www.github.com/noahrider/website">Check the code</a> if you don't believe me.<br>
+        <i>It's a steal of a deal!</i></p>
+        <button id="accept-cookies">Accept</button>
+        <button id="reject-cookies">Reject</button>
+    </div>
+    <!-- header -->
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#top"><img 
+                    src="imgs/logos/njr.png" 
+                    alt="[/njr]"
+                    width="125px"
+                    ></a></li>
+                <li><a href="#projects"><p>Projects</p></a></li>
+                <li><a href="#media"><p>Media</p></a></li>
+                <li><a href="#contact"><p>Contact</p></a></li>
+                <li><a href="#" onclick="toggleTheme()"><i id="theme-icon" class="fas fa-sun"></i></a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <!-- top section -->
+    <section id="top">
+        <div class="container">
+            <div class="image-container">
+                <img src="imgs/noah_top.jpg" alt="noah picture">
+            </div>
+            <div class="about-section" id="about-section">
+                <p>
+                    Hi, I'm <span style="color:red;">Noah Rider</span>! On my neat little corner of the internet,
+                    you can check out what projects I have going on, and what I've been working on. There's a lot to see!
+                </p>
+                <i class="fa-brands fa-github"><a href="https://www.github.com/noahrider"></a></i>
+            </div>
         </div>
-<footer>
-  <marquee><p title="I'm on, what, the 5th iteration of this website? I've really gotta stick to a theme.">&copy 2021-2024 Noah Rider, [/noahrider]</p></marquee>
-</footer>
+    </section>
+
+    <!-- projects section -->
+    <section id="projects">
+        <h1>What I'm working on</h1>
+        <p>I don't have much here yet.</p>
+    </section>
+
+    <!-- media section -->
+    <section id="media">
+        <h1>What I'm involved in</h1>
+        <h2>I currently run a few YouTube channels;</h2>
+        <div class="youtube-channels">
+            <div class="youtube-channel">
+                <div class="channel-info">
+                    <img src="imgs/logos/RMN2.png" alt="Channel Image">
+                    <p>RM Network is a YouTube channel that is involved in making series, 
+                        such as <span title="coming soon">******* ****</span>.</p>
+                </div>
+                <div class="role">
+                    <p>What's my role? I co-made the channel with Serena.</p>
+                </div>
+                <div class="channel-link">
+                    <a href="https://www.youtube.com/@TheRMNet">Link to RM Network <br>[on YouTube]</a>
+                </div>
+            </div>
+            <div class="youtube-channel">
+                <div class="channel-info">
+                    <img src="imgs/logos/knc.jpg" alt="Channel Image">
+                    <p>KingNoahCraft is a channel where I mostly play video games</p>
+                </div>
+                <div class="role">
+                    <p>What's my role? I run it myself.</p>
+                </div>
+                <div class="channel-link">
+                    <a href="https://www.youtube.com/@KingNoahCraft">Link to KingNoahraft <br>[on YouTube]</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact">
+        <h1>Get in touch!</h1>
+        <div class="contact-points">
+            <div class="contact-point">
+                <h2>If you just want to talk;</h2>
+                <button href="mailto:dev@noahrider.com">dev@noahrider.com</button>
+            </div>
+            <div class="contact-point">
+                <h2>If it's about RM Network;</h2>
+                <button href="mailto:noah@rmnetwork.us">noah@rmnetwork.us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <p title="I'm on, what, the 5th iteration of this website? I've really gotta stick to a theme.">
+            &copy 2021-2024 Noah Rider.<br>All rights reserved.
+        </p>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
-<script src="main.js"></script>
 </html>
