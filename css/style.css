@@ -1,3 +1,4 @@
+/* global styles */
 body,html {
   min-height: 100vh;
   font-size: 16px;
@@ -7,14 +8,14 @@ body,html {
   overflow-x: hidden;
 }
 
+/* typography */
 h1,h2,h3,h4,h5,p,a {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-/* header stuff */
-
+/* header styles */
 header {
   display: flex;
   justify-content: space-between;
@@ -67,8 +68,7 @@ nav a {
   text-decoration: none;
 }
 
-/* footer */
-
+/* footer styles */
 footer {
   position: fixed;
     left: 0;
@@ -90,8 +90,7 @@ footer {
   color: #ffffff;
 }
 
-/* light/dark mode */
-
+/* light/dark mode styles */
 .light-mode {
   background-color: #ffffff;
   color: #000000;
@@ -102,8 +101,7 @@ footer {
   color: #ffffff;
 }
 
-/* other stuff */
-
+/* other styles */
 #top {
   height: 100vh;
   display: flex;
@@ -186,6 +184,7 @@ footer {
   margin: 0 auto;
   max-width: 800px;
 }
+
 .about-section.dark-mode {
   background-color: #333;
   color: #fff;
@@ -220,7 +219,7 @@ footer {
 }
 
 .youtube-channel {
-  background: linear-gradient(0deg, rgb(33, 31, 152) 0%, rgb(255, 0, 0) 100%);
+  background: linear-gradient(0deg, rgba(33, 31, 152, 0) 0%, rgb(255, 0, 0) 100%);
   border: 10px solid black;
   border-radius: 10px;
   display: flex;
@@ -235,8 +234,8 @@ footer {
 
 .youtube-channels {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping to create multiple rows */
-  justify-content: space-around; /* Adjust as needed */
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .channel-info img {
@@ -283,7 +282,7 @@ footer {
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 10px;
-    padding: 10px 20px;
+  padding: 10px 20px;
   width: 300px;
   text-align: center;
 }
