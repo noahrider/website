@@ -19,15 +19,6 @@
     <link rel="icon" type="image/png" href="imgs/noah_top.jpg">
 </head>
 <body>
-    <!-- cookie popup -->
-    <div id="cookie-popup">
-        <h2>Cookies!!</h2>
-        <p>I'm using cookies to remember if you are using light or dark mode. That's it.
-        <a href="https://www.github.com/noahrider/website">Check the code</a> if you don't believe me.<br>
-        <i>It's a steal of a deal!</i></p>
-        <button id="accept-cookies">Accept</button>
-        <button id="reject-cookies">Reject</button>
-    </div>
     <!-- header -->
     <header>
         <nav>
@@ -40,10 +31,16 @@
                 <li><a href="#projects"><p>Projects</p></a></li>
                 <li><a href="#media"><p>Media</p></a></li>
                 <li><a href="#contact"><p>Contact</p></a></li>
-                <li><a href="#" onclick="toggleTheme()"><i id="theme-icon" class="fas fa-sun"></i></a></li>
             </ul> 
         </nav>
+        <div class="mode-icons"><a href="#" onclick="toggleTheme()"><span id="theme-icon">
+            <i 
+            title="light/dark mode" 
+            class="fas fa-sun"
+            alt="light/dark mode"
+            ></i></span></a></div>
     </header>
+    
 
     <!-- top section -->
     <section id="top">
@@ -53,7 +50,13 @@
             </div>
             <div class="about-section" id="about-section">
                 <p>
-                    Hi, I'm <span style="color:red;">Noah Rider</span>! On my neat little corner of the internet,
+                    Hi, I'm <span 
+                    style="color:red;"
+                    onmouseover="this.style.color='green';this.style.cursor='help'" 
+                    onmouseout="this.style.color='red'"
+                    title="I'm a developer."
+                    >Noah Rider</span>! 
+                    On my neat little corner of the internet,
                     you can check out what projects I have going on, and what I've been working on. There's a lot to see!
                 </p>
                 <i class="fa-brands fa-github"><a href="https://www.github.com/noahrider"></a></i>
@@ -76,25 +79,25 @@
                 <div class="channel-info">
                     <img src="imgs/logos/RMN2.png" alt="Channel Image">
                     <p>RM Network is a YouTube channel that is involved in making series, 
-                        such as <span title="coming soon">******* ****</span>.</p>
+                        such as <span title="CHANNEL ZERO (this summer)">******* ****</span>.</p>
                 </div>
                 <div class="role">
                     <p>What's my role? I co-made the channel with Serena.</p>
                 </div>
                 <div class="channel-link">
-                    <a href="https://www.youtube.com/@TheRMNet">Link to RM Network <br>[on YouTube]</a>
+                    <a href="https://www.youtube.com/@TheRMNet"><p>Link to RM Network <br>[on YouTube]</p></a>
                 </div>
             </div>
             <div class="youtube-channel">
                 <div class="channel-info">
                     <img src="imgs/logos/knc.jpg" alt="Channel Image">
-                    <p>KingNoahCraft is a channel where I mostly play video games</p>
+                    <p>KingNoahCraft is a channel where I mostly play video games.</p>
                 </div>
                 <div class="role">
                     <p>What's my role? I run it myself.</p>
                 </div>
                 <div class="channel-link">
-                    <a href="https://www.youtube.com/@KingNoahCraft">Link to KingNoahraft <br>[on YouTube]</a>
+                    <a href="https://www.youtube.com/@KingNoahCraft">Link to KingNoahCraft <br>[on YouTube]</a>
                 </div>
             </div>
         </div>

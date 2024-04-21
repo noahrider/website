@@ -24,13 +24,27 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(1, 0, 0, 0.8);
   z-index: 1000;
 }
 
 .mode-icons {
   display: flex;
   align-items: center;
+  font-size: 50px;
+  margin-right: 50px;
+}
+
+.mode-icons a {
+  color: white;
+}
+
+.mode-icons a:hover {
+  color: yellow;
+}
+
+.dark-mode .mode-icons {
+  color: #fff;
 }
 
 h1 {
@@ -100,6 +114,7 @@ footer {
   background-color: #000000;
   color: #ffffff;
 }
+
 
 /* other styles */
 #top {
@@ -171,6 +186,14 @@ footer {
 
 .image-container img {
   border-radius: 50%;
+  border: 5px solid rgb(255, 0, 0);
+  width: 200px;
+  height: 200px;
+}
+
+.image-container img:hover {
+  border-radius: 50%;
+  border: 5px solid green;
   width: 200px;
   height: 200px;
 }
@@ -219,11 +242,12 @@ footer {
 }
 
 .youtube-channel {
-  background: linear-gradient(0deg, rgba(33, 31, 152, 0) 0%, rgb(255, 0, 0) 100%);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(255, 0, 0) 100%);
   border: 10px solid black;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   border: 1px solid #ccc;
   margin: 10px;
@@ -248,26 +272,27 @@ footer {
 
 .channel-info p {
   text-align: center;
+  color: white;
 }
 
 .role p {
   text-align: center;
   margin-top: 10px;
   font-style: italic;
+  color: white;
+}
+
+  .channel-link {
+  margin-top: auto;
+  color: white;
 }
 
 .channel-link a {
-  padding: 10px;
-  border-radius: 10px;
   text-align: center;
   display: block;
-  margin-top: 10px;
-  text-decoration: none;
+  text-decoration: double;
   color: rgb(0, 0, 0);
-}
-
-.channel-link a:hover {
-  background-color: #333;
+  color: white;
 }
 
 .contact-points {
