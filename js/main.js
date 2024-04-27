@@ -41,3 +41,6 @@ function toggleTheme() {
     const theme = body.classList.contains('dark-mode') ? 'dark' : 'light';
     document.cookie = `theme=${theme};expires=Fri, 31 Dec 9999 23:59:59 GMT`;
 }
+
+// funny console text
+console.log("what are you doing in here? there's not much...")
