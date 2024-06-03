@@ -185,8 +185,6 @@ footer {
 .image-container img:hover {
   border-radius: 50%;
   border: 5px solid green;
-  width: 200px;
-  height: 200px;
 }
 
 .about-section {
@@ -310,4 +308,9 @@ footer {
 #contact-point {
   background-color: #120000; 
   color: #ffffff; 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
